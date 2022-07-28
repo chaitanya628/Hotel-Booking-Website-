@@ -1,0 +1,21 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+#maincontainer{
+    
+    height: 100%;
+}
+
+header img{
+    width: 60px;
+    height: 60px;
+}
+#cities img{
+    height: 150px;
+    width: 150px;
+}
+#social img{
+    height: 20px;
+    width: 22px;
+}
