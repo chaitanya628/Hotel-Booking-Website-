@@ -1,6 +1,33 @@
-body{
+body {
     height: 100%;
-    width: 100%;
+
+    margin: 0px;
+    background-color: #e0e0e0;
+}
+header {
+    background-color: rosybrown;
+}
+
+footer {
+    background-color: rosybrown;
+}
+#hotel{
+    background-color: rgb(132, 136, 139);
+    width: 50%;
+    height: 20%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#customer{
+    margin: 2%;
+}
+#tariff{
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 2%;
+    padding: 1% 2%;
 }
 #maincontainer{
     

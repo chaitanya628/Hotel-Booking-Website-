@@ -1,6 +1,15 @@
-body{
+body {
     height: 100%;
-    width: 100%;
+
+    margin: 0px;
+    background-color: #e0e0e0;
+}
+header {
+    background-color: rosybrown;
+}
+
+footer {
+    background-color: rosybrown;
 }
 #maincontainer{
     
@@ -13,6 +22,21 @@ header img{
 #hotel img{
     height: 500px;
     width: 500px;
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+#dets{
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-bottom: 1%;
+
+}
+#desc{
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-top: 1%;
+    margin-bottom: 2%;
 }
 #social img{
     height: 20px;
