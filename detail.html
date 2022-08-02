@@ -1,60 +1,88 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Details</title>
-    </head>
-    <link rel="stylesheet" href="/styles/detail.css">
-    <body>
-        <div id="maincontainer">
-            <header>
-                <a href="index.html">             
-                <img src="assests/images/logo.png" alt="logo"/></a>
 
-                <a href="login.html" target="_self">Login</a>
-            </header>
-            <div id="content">
+<head>
+    <title>Details</title>
+</head>
+<link rel="stylesheet" href="/styles/detail.css">
+<link rel="stylesheet" href="/styles/common.css">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+<body>
+    <div id="maincontainer">
+        <header>
+            <a href="index.html">
+                <img src="assests/images/logo.png" alt="logo" class="logo" /></a>
+
+            <a href="login.html" target="_self">Login</a>
+        </header>
+        <div id="content">
+            <div class="details">
                 <div id="hotel">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="raddison">
-                    <form action="payment.html" id="dets">
-                        <label for="adults">Adults:</label>
-                        <input type="number" name="adults" min="1" value="1" required><br>
-                        <label for="na">Name:</label>
-                        <input type="text" required name="na"><br>
-                        <label for="fdate">From Date:</label>
-                        <input type="date" name="fdate" placeholder="dd-mm-yyyy" value=""><br>
-                        <label for="tdate">To Date:</label>
-                        <input type="date" name="tdate" required><br>
-                        <label for="total">Total:</label>
-                        <input type="text" readonly name="total"><br>
-                        <input type="submit" value="Book now">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                        alt="raddison">
+                </div>
+                <div id="dets">
+                    <form action="payment.html">
+                        <div class="input">
+                            <div class="label-input"><label for="adults" class="label">Adults:</label>
+                                <input type="number" name="adults" min="1" value="1" required><br>
+                            </div>
+                            <div class="label-input"><label for="na" class="label">Name:</label>
+                                <input type="text" required name="na"><br>
+                            </div>
 
+                            <div class="label-input"><label for="fdate" class="label">From Date:</label>
+                                <input type="date" name="fdate" required><br>
+                            </div>
+
+                            <div class="label-input"><label for="tdate" class="label">To Date:</label>
+                                <input type="date" name="tdate" required><br>
+                            </div>
+
+                            <div class="label-input"><label for="total" class="label">Total:</label>
+                                <input type="text" readonly name="total"><br>
+                            </div>
+
+                            <div class="label-input">
+                                <div class="btn"><button id="button">Book Now</button></div>
+                            </div>
+
+                        </div>
                     </form>
                 </div>
-                <div id="desc">
-                    <h2>Raddison Blu Hotel</h2>
-                    <p>RATING</p>
-                    <p>5 star</p>
-                    <p>AMENITIES</p>
-                    <ul>
-                        <li>Room service</li>
-                        <li>Restaurant</li>
-                        <li>Business center</li>
-                        <li>Fitness center</li>
-                        <li>Pool</li>
-                    </ul>
-                    <h5>DESCRIPTION</h5>
-                    <p>Random description hfejkwhfjwbdnm fmewjhrjkgqwjbfrqwjrgwhrjnwmbd mnbvj qgdeuqcgjwbvjwqhejqwghjhbnmbdjwhdejbncbbbfjgsjdff.bfguasytudghwjdbjwndw</p>
-                </div>
+
             </div>
-            <footer>
-                <a href="contact.html" target="_self">Contact Us</a>
-                <div id="social">
-                    <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook"></a>
-                    <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="facebook"></a>
-                    <a href="https://www.twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="facebook"></a>
-                </div>
-                &copy; 2020 ROOM SEARCH PVT. LTD.
-            </footer>
+            <div id="desc">
+                <h2>Raddison Blu Hotel</h2>
+                <h5 class="cursive">RATING</h5>
+                <p>5 star</p>
+                <h5 class="cursive">AMENITIES</h5>
+                <ul>
+                    <li>Room service</li>
+                    <li>Restaurant</li>
+                    <li>Business center</li>
+                    <li>Fitness center</li>
+                    <li>Pool</li>
+                </ul>
+                <h5 class="cursive">DESCRIPTION</h5>
+                <p>Random description hfejkwhfjwbdnm fmewjhrjkgqwjbfrqwjrgwhrjnwmbd mnbvj
+                    qgdeuqcgjwbvjwqhejqwghjhbnmbdjwhdejbncbbbfjgsjdff.bfguasytudghwjdbjwndw</p>
+            </div>
         </div>
-    </body>
+        <footer>
+            <div id="contact"><a href="contact.html" target="_self">Contact Us</a></div>
+            <div id="social">
+                <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png"
+                        alt="facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png"
+                        alt="facebook"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="assests/images/twitter.png"
+                        alt="facebook"></a>
+            </div>
+            <div id="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</div>
+        </footer>
+    </div>
+</body>
+
 </html>

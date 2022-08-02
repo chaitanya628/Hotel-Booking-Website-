@@ -5,35 +5,61 @@
     <title>Index</title>
 </head>
 <link rel="stylesheet" href="/styles/index.css">
+<link rel="stylesheet" href="/styles/common.css">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
 <body>
     <div id="maincontainer">
 
         <header>
-            <img src="assests/images/logo.png" alt="logo" />
+            <img src="assests/images/logo.png" alt="logo" class="logo" />
             <a href="login.html" target="_self">Login</a>
         </header>
 
         <div id="content">
             <div id="search">
-                <form>
-                    <input type="text" placeholder="City">
-                </form>
+
+                <input type="text" placeholder="City" id="inputform">
+
             </div>
             <div id="cities">
                 <a href="list.html" target="_self">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"
-                        alt="delhi" /></a>
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="delhi">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="delhi">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="delhi">
+                    <div class="container">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"
+                            alt="delhi" />
+                        <div class="overlay">
+                            <div class="text">Delhi</div>
+                        </div>
+                    </div>
+                </a>
+                <div class="container">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="delhi">
+                    <div class="overlay">
+                        <div class="text">Goa</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="delhi">
+                    <div class="overlay">
+                        <div class="text">Hyderabad</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="delhi">
+                    <div class="overlay">
+                        <div class="text">Kolkata</div>
+                    </div>
+                </div>
+                
 
             </div>
-            <a href="index.html">View more>></a>
+            <div class="view"><a href="#">View more>></a></div>
         </div>
 
         <footer>
-            <a href="contact.html" target="_self">Contact Us</a>
+            <div id="contact"><a href="contact.html" target="_self">Contact Us</a></div>
+
+
             <div id="social">
                 <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png"
                         alt="facebook"></a>
@@ -42,7 +68,7 @@
                 <a href="https://www.twitter.com" target="_blank"><img src="assests/images/twitter.png"
                         alt="facebook"></a>
             </div>
-            &copy; 2020 ROOM SEARCH PVT. LTD.
+            <div id="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</div>
         </footer>
 
     </div>

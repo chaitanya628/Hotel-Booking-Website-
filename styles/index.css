@@ -1,50 +1,75 @@
-body {
-    height: 100%;
-    
-    margin: 0px;
-    background-color: #e0e0e0;
-}
-
-#maincontainer {
-
-    height: 100%;
-    
-}
-
-header {
-    background-color: rosybrown;
-}
-
-footer {
-    background-color: rosybrown;
-}
-
 #search {
     height: 380px;
     background: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg") no-repeat center;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
     
+ }
+ #inputform{
+    border: none;
+    outline: none;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 12px;
+    width: 25%;
+    
+ }
+
+ .view{
+    
+    margin-bottom: 100px;
+    text-align: center;
+    
+ }
+#content{
+    display: flex;
+    flex-direction: column;
 }
 
-header img {
-    width: 60px;
-    height: 60px;
-}
-#cities{
-    margin-right: 15%;
-    margin-left: 15%;
-    
+#cities {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 4% 0;
     
 }
-
-#cities img {
+#cities img{
     height: 150px;
     width: 150px;
-    padding: 4%;
     border-radius: 25%;
 }
 
-#social img {
-    height: 20px;
-    width: 22px;
+.container {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 25%;
+    box-shadow: 10px 10px 10px grey;
 }
+.container:hover .overlay{
+    position: absolute;
+    background-color:rgba(0, 0, 0,0.5);
+    height: 100%;
+    width: 100%;
+    border-radius: 25%;
+    top: 0;
+    left: 0;
+    
+    
+}
+.container:hover .text {
+    z-index: 1;
+}
+.text{
+    color: #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+ } 
+

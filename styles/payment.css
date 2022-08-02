@@ -1,47 +1,35 @@
-body {
-    height: 100%;
-
-    margin: 0px;
-    background-color: #e0e0e0;
-}
-header {
-    background-color: rosybrown;
-}
-
-footer {
-    background-color: rosybrown;
-}
 #hotel{
     background-color: rgb(132, 136, 139);
     width: 50%;
     height: 20%;
-    margin: auto;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin: 2% auto;
+    display: flex;
+    align-items: center;
 }
-#customer{
-    margin: 2%;
-}
-#tariff{
-    box-sizing: border-box;
+
+.payment{
     border: 1px solid black;
     border-radius: 5px;
-    margin: 2%;
+    margin: 0 2%;
     padding: 1% 2%;
-}
-#maincontainer{
     
-    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rosybrown;
 }
-header img{
-    width: 60px;
-    height: 60px;
-}
+
 #hotel img{
-    height: 500px;
-    width: 500px;
+    max-height: 300px;
+    max-width: 270px;
 }
-#social img{
-    height: 20px;
-    width: 22px;
+.address{
+    margin-left: 2%;
+}
+b{
+    font-family: cursive;
+}
+#content{
+    padding-top: 30px;
+    
 }
