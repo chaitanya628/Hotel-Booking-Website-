@@ -7,14 +7,53 @@
 <link rel="stylesheet" href="/styles/payment.css">
 <link rel="stylesheet" href="/styles/common.css">
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 <body>
     <div id="maincontainer">
         <header>
             <a href="index.html">
                 <img src="assests/images/logo.png" alt="logo" class="logo" /></a>
-            <a href="login.html" target="_self">Login</a>
+            <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
+                data-target="#loginModal">LOGIN</button>
         </header>
+        <!-- Login Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Please Login</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form action="/index.html">
+                        <div class="modal-body">
+
+                            <div class="d-flex justify-content-around align-items-center my-2 pl-4">
+                                <label>Username:</label>
+                                <input type="text" required placeholder="Enter Username" name="username"><br>
+                            </div>
+                            <div class="d-flex justify-content-around align-items-center my-4 pl-4">
+                                <label>Password:</label>
+                                <input type="password" placeholder="Enter Password" required name="password"><br>
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer justify-content-center">
+
+                            <input type="submit" value="Login" class="btn btn-primary">
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
         <div id="content">
             <div id="hotel">
                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
@@ -37,11 +76,14 @@
                     <p><b>Tariff Breakdown:</b> Rs.1000 x 2 Adults x 5 Nights</p>
                     <p><b>Total Amount:</b> Rs.10000</p>
                 </div>
-                <a href="#">Pay Now</a>
+                <a href="#"><button type="button" class="btn btn-success">Pay Now</button></a>
             </div>
         </div>
         <footer>
-            <div id="contact"><a href="contact.html" target="_self">Contact Us</a></div>
+            <div id="contact">
+                <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#contactUsModal">Contact
+                    Us</button>
+            </div>
             <div id="social">
                 <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png"
                         alt="facebook"></a>
@@ -52,6 +94,31 @@
             </div>
             <div id="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</div>
         </footer>
+    </div>
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactUsModal" tabindex="-1" role="dialog" aria-labelledby="contactUsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactUsModalLabel">Get in touch</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Thank you for reaching out!!!<br>
+                        Please enter your email and we will get back to you.</p>
+                    <form action="#" method="get">
+                        <input type="email" placeholder="Enter your email" required name="email" autocomplete="off"><br>
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" name="Submit" value="Submit" class="btn btn-primary">
+                </div>
+
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 

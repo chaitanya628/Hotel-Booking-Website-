@@ -1,12 +1,42 @@
-#loader{
+#loader {
     border: 12px solid #f3f3f3;
     border-radius: 50%;
     height: 70px;
     width: 70px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);      
+    align-items: center;
     border-top: 12px solid #444444;
+    animation: spin 1s linear infinite;
+}
 
+html,
+body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#maincontainer {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }

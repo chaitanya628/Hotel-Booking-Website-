@@ -8,15 +8,9 @@
     flex-basis: 40%;
     
 }
-/* .hotel a{
-    
-    width: 40%;
-    display: flex;
-    margin: 2% 4%;
-    background-color:lightgrey;
-    flex-basis: 40%;
-    flex-shrink: 0;
-} */
+.hotel:hover{
+    background-color: rosybrown;
+}
 #list img {
     height: 200px;
     width: 250px;
@@ -34,10 +28,7 @@
     /* float: right; */
     margin: 0 25px;
 }
-#map{
-    display: none;
-    
-}
+
 #list{
     display: flex;
     flex-wrap: wrap;
