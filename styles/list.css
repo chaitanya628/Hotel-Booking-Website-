@@ -38,3 +38,6 @@
 .description{
     margin: 4%;
 }
+.checked {
+    color: orange;
+  }

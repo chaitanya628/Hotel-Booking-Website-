@@ -1,7 +1,7 @@
 
-#hotel img{
-    height: 350px;
-    width: 500px;
+.hotel{
+    height: 350px !important;
+    width: 500px !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,8 +62,12 @@
     flex: 1 0 30%;
     flex-grow: 0;
 }
-
-
+.carousel-control-prev{
+    margin-left: -80px; 
+}
+.carousel-control-next {
+    margin-right: -80px;
+}
 #content{
     
     margin-left: 2%;
@@ -74,3 +78,6 @@
 .cursive{
     font-family: cursive;
 }
+.checked {
+    color: orange;
+  }
